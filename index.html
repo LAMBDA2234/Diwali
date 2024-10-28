@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Diwali, My Love!</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffcc66;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0 10px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffcc66;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .diwali-message, .proposal-message, .response-form {
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ff9900;
+            border-radius: 10px;
+            background-color: #333;
+            box-shadow: 0 0 15px rgba(255, 204, 102, 0.6);
+            margin-top: 20px;
+        }
+        .proposal-message {
+            display: none;
+            color: #ffe680;
+        }
+        button {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc7a00;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .fireworks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://www.example.com/fireworks.gif') center/cover no-repeat;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fireworks"></div>
+
+    <h1>Happy Diwali, My Love!</h1>
+
+    <div class="diwali-message">
+        <p>May this Diwali bring light and joy to your heart, just like you've brought to mine. You light up my life in so many ways, and today I want to make this festival extra special for us.</p>
+        <button onclick="revealProposal()">Click for a Surprise</button>
+    </div>
+
+    <div class="proposal-message" id="proposalMessage">
+        <h2>Will You Be Mine Forever?</h2>
+        <p>You mean the world to me, and I can’t imagine my life without you. So, my love, will you make me the happiest person alive and say ‘Yes’ to forever together?</p>
+        <button onclick="showResponseForm()">Share Your Answer</button>
+    </div>
+
+    <div class="response-form" id="responseForm" style="display: none;">
+        <h2>Your Answer</h2>
+        <form action="https://formspree.io/f/xrbgeodb" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="response">Your Response:</label>
+            <textarea id="response" name="response" rows="4" required></textarea>
+            
+            <button type="submit">Send Your Response</button>
+        </form>
+    </div>
+
+    <script>
+        function revealProposal() {
+            document.getElementById('proposalMessage').style.display = 'block';
+        }
+
+        function showResponseForm() {
+            document.getElementById('responseForm').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
