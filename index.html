@@ -1,114 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Diwali, My Love!</title>
-    <style>
-        body {
-            background-color: #1a1a1a;
-            color: #ffcc66;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            padding: 0 10px;
-        }
-        h1, h2 {
-            text-align: center;
-            color: #ffcc66;
-            text-shadow: 2px 2px 5px #000;
-        }
-        .diwali-message, .proposal-message, .response-form {
-            max-width: 600px;
-            padding: 20px;
-            text-align: center;
-            border: 2px solid #ff9900;
-            border-radius: 10px;
-            background-color: #333;
-            box-shadow: 0 0 15px rgba(255, 204, 102, 0.6);
-            margin-top: 20px;
-        }
-        .proposal-message {
-            display: none;
-            color: #ffe680;
-        }
-        button {
-            background-color: #ff9900;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 18px;
-            margin-top: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #cc7a00;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .fireworks {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: url('https://www.example.com/fireworks.gif') center/cover no-repeat;
-            opacity: 0.4;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Happy Moments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff6584;
+    }
+
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .memory {
+      width: 80%;
+      margin: 10px 0;
+      padding: 15px;
+      background-color: #ffebf0;
+      border-radius: 8px;
+    }
+
+    .message {
+      font-style: italic;
+      color: #666;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 12px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #ff6584;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="fireworks"></div>
+  <h1>Hey Yashu, Here’s Our Happy Moments</h1>
 
-    <h1>Happy Diwali, My Love!</h1>
-
-    <div class="diwali-message">
-        <p>May this Diwali bring light and joy to your heart, just like you've brought to mine. You light up my life in so many ways, and today I want to make this festival extra special for us.</p>
-        <button onclick="revealProposal()">Click for a Surprise</button>
+  <div class="section timeline">
+    <h2>Memory Timeline</h2>
+    <div class="memory">
+      <p><strong>First Meet:</strong> When we met in Jaipur we quickly got attached ❤️</p>
+      <p class="message">“You have the best voice!”</p>
     </div>
-
-    <div class="proposal-message" id="proposalMessage">
-        <h2>Will You Be Mine Forever?</h2>
-        <p>You mean the world to me Yaby, and I can’t imagine my life without you. So, my love, will you make me the happiest person alive and say ‘Yes’ to forever together? I know I did some pretty chaotic stuff in the past but can you give me last chance and be mine forever?? yrr cause its not easy to think and cry everytime thinking she loves me or not when I need you the most.</p>
-        <button onclick="showResponseForm()">Share Your Answer</button>
+    <div class="memory">
+      <p><strong>First Physical Contact:</strong> I still remember it was just a handshake but it was my whole world, and that was the first and the last time we touched each other(in a good/innocent sense) 🏔️🌅</p>
+      <p class="message">“I just wanna change myself and fix things between us.”</p>
     </div>
+    <!-- Add more memories here -->
+  </div>
 
-    <div class="response-form" id="responseForm" style="display: none;">
-        <h2>Your Answer</h2>
-        <form action="https://formspree.io/f/xrbgeodb" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="response">Your Response:</label>
-            <textarea id="response" name="response" rows="4" required></textarea>
-            
-            <button type="submit">Send Your Response</button>
-        </form>
+  <div class="section">
+    <h2>Things I Love About You</h2>
+    <p>1. Your kind heart 💖</p>
+    <p>2. Your amazing sense of humor 😂</p>
+    <p>3. The way you make me feel special 🌹</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Future Plans</h2>
+    <p>Adventures await us. Let’s make more memories, travel the world, and enjoy every moment together!</p>
+  </div>
+
+  <div class="section">
+    <h2>Can we start again? I can't lose you 🥹🥹</h2>
+    <div class="button-container">
+      <button class="button" onclick="answerYes()">YES</button>
+      <button class="button" disabled>NO</button>
     </div>
+  </div>
 
-    <script>
-        function revealProposal() {
-            document.getElementById('proposalMessage').style.display = 'block';
-        }
-
-        function showResponseForm() {
-            document.getElementById('responseForm').style.display = 'block';
-        }
-    </script>
-
+  <script>
+    function answerYes() {
+      alert("Thank you! I promise to make things better ❤️");
+      // You could add more JavaScript to enhance this response or redirect to a new page
+    }
+  </script>
 </body>
 </html>
