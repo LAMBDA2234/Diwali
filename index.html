@@ -4,8 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Sorry, Babe</title>
-    <!-- Link to your local CSS file -->
-    <link rel="stylesheet" href="https://github.com/LAMBDA2234/Diwali/blob/main/css.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f8f7;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #ff5e5b;
+            color: white;
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            background-color: #ff1744;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #e60012;
+        }
+
+        .form-container {
+            padding: 50px 20px;
+            background: white;
+            margin: 30px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .apology-text {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #ff5e5b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e60012;
+        }
+
+        button:nth-child(2) {
+            background-color: #ffa726;
+        }
+
+        button:nth-child(2):hover {
+            background-color: #fb8c00;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #heart-section {
+            background-color: #ffcccb;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+
+        #love-message {
+            font-size: 1.2em;
+            color: #ff1744;
+            margin-top: 20px;
+        }
+
+        .apology-footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Feedback Style */
+        .feedback {
+            background-color: #4CAF50;  /* Green for positive feedback */
+            color: white;
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <header class="hero-section">
@@ -39,7 +160,61 @@
         <p>&copy; 2025 I'm Sorry App. All rights reserved.</p>
     </footer>
 
-    <!-- Link to your local JavaScript file -->
-    <script src="https://github.com/LAMBDA2234/Diwali/blob/main/java.js"></script>
+    <script>
+        // Function to show the apology form
+        function showApologyForm() {
+            document.getElementById('apology-form').classList.remove('hidden');
+        }
+
+        // Function to reveal the heart section (apology surprise)
+        function showHeart() {
+            document.getElementById('heart-section').classList.remove('hidden');
+        }
+
+        // Function to reveal the heartfelt love message
+        function revealLoveMessage() {
+            document.getElementById('love-message').classList.remove('hidden');
+        }
+
+        // Function for the "Try Harder" button
+        function tryHarder() {
+            // Log the selection to the console
+            console.log("The user clicked 'Try Harder' 😅");
+
+            // Show feedback message on the webpage
+            displayFeedback("You clicked 'Try Harder'! 😅 I'm trying my best!");
+
+            // Optional: Send an alert
+            alert("I'm going to work my hardest to be the best boyfriend ever! 😅💪 I'll make it up to you in every way I can! ❤️");
+        }
+
+        // Function for the "I forgive you" button
+        function showForgiveness() {
+            // Log the selection to the console
+            console.log("The user clicked 'I forgive you' ❤️");
+
+            // Show feedback message on the webpage
+            displayFeedback("You clicked 'I forgive you'! ❤️ You're amazing!");
+
+            // Optional: Send an alert
+            alert("Thank you for forgiving me! ❤️ I'm truly grateful!");
+        }
+
+        // Function to display the feedback on the webpage
+        function displayFeedback(message) {
+            // Create a new div element for feedback
+            const feedbackDiv = document.createElement('div');
+            feedbackDiv.classList.add('feedback');
+            feedbackDiv.textContent = message;
+
+            // Add the feedback to the page (append it to the body or a specific section)
+            document.body.appendChild(feedbackDiv);
+
+            // Hide the feedback after a short time (e.g., 3 seconds)
+            setTimeout(() => {
+                feedbackDiv.style.display = 'none';
+            }, 3000);  // 3000 milliseconds = 3 seconds
+        }
+    </script>
 </body>
 </html>
